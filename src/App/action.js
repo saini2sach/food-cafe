@@ -2,7 +2,7 @@ import Actions from "../constants/actionTypes";
 
 export const getProductList = () => async dispatch => {
     try {
-        const middleResponse = await fetch(' http://demo6817798.mockable.io/getproductdetail');
+        const middleResponse = await fetch(' https://demo6817798.mockable.io/getproductdetail');
         let response;
         if (middleResponse.ok) { // if HTTP-status is 200-299
             // get the response body (the method explained below)
