@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9152049a779790c3068bbb1a038aad36",
+    "revision": "48a20f15e1784bc568e0ef2e565ef442",
     "url": "/food-cafe/index.html"
   },
   {
-    "revision": "5815b91e2227be17f8ed",
+    "revision": "a96ed586d538b538ab13",
     "url": "/food-cafe/static/css/main.fa94f1f8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/food-cafe/static/js/2.1fcd62a3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5815b91e2227be17f8ed",
-    "url": "/food-cafe/static/js/main.04df3876.chunk.js"
+    "revision": "a96ed586d538b538ab13",
+    "url": "/food-cafe/static/js/main.62b41cae.chunk.js"
   },
   {
     "revision": "aa088657b19baad260e9",

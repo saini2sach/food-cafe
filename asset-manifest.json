@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/food-cafe/static/css/main.fa94f1f8.chunk.css",
-    "main.js": "/food-cafe/static/js/main.04df3876.chunk.js",
-    "main.js.map": "/food-cafe/static/js/main.04df3876.chunk.js.map",
+    "main.js": "/food-cafe/static/js/main.62b41cae.chunk.js",
+    "main.js.map": "/food-cafe/static/js/main.62b41cae.chunk.js.map",
     "runtime-main.js": "/food-cafe/static/js/runtime-main.4d5d4e6c.js",
     "runtime-main.js.map": "/food-cafe/static/js/runtime-main.4d5d4e6c.js.map",
     "static/js/2.1fcd62a3.chunk.js": "/food-cafe/static/js/2.1fcd62a3.chunk.js",
     "static/js/2.1fcd62a3.chunk.js.map": "/food-cafe/static/js/2.1fcd62a3.chunk.js.map",
     "index.html": "/food-cafe/index.html",
-    "precache-manifest.e918883c53b2b934ec12215687cb73d1.js": "/food-cafe/precache-manifest.e918883c53b2b934ec12215687cb73d1.js",
+    "precache-manifest.7c655810844dc090dea93e70b7118ca4.js": "/food-cafe/precache-manifest.7c655810844dc090dea93e70b7118ca4.js",
     "service-worker.js": "/food-cafe/service-worker.js",
     "static/css/main.fa94f1f8.chunk.css.map": "/food-cafe/static/css/main.fa94f1f8.chunk.css.map",
     "static/js/2.1fcd62a3.chunk.js.LICENSE.txt": "/food-cafe/static/js/2.1fcd62a3.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.4d5d4e6c.js",
     "static/js/2.1fcd62a3.chunk.js",
     "static/css/main.fa94f1f8.chunk.css",
-    "static/js/main.04df3876.chunk.js"
+    "static/js/main.62b41cae.chunk.js"
   ]
 }
