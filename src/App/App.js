@@ -9,6 +9,14 @@ export default class App extends Component {
     this.props.getProductList();
   }
 
+  handleSearch = (val) => {
+    this.props.handleSearch(val);
+  }
+
+  applyFilter = (arr) => {
+    this.props.applyFilter(arr);
+  }
+
   render() {
     const { productData } = this.props;
     return (
@@ -17,7 +25,7 @@ export default class App extends Component {
           <h1>{productData.heading}</h1>
           <p>{productData.description}</p>
         </header>
-        <Nav />
+        <Nav handleSearch={this.handleSearch} applyFilter={this.applyFilter} />
         <Main />
       </div>
     )

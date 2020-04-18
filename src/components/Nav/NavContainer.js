@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import Nav from './Nav';
 
 const mapStateToProps = (state) => ({
-    ...state.addressDetailReducer
+    ...state.addReducer
 })
 
 

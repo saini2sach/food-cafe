@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import Main from './Main';
 
 const mapStateToProps = (state) => ({
-    ...state.addressDetailReducer
+    ...state.appReducer
 })
 
 const mapDispatchToProps = (dispatch) => {

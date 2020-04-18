@@ -1,0 +1,91 @@
+.navContainer {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    .main {
+        display: flex;
+
+        input {
+            flex: 3;
+            padding: 14px 8px;
+            box-sizing: border-box;
+            min-height: 52px;
+            border: 1px solid #d2d2d2;
+            background: #f2f2f2;
+            font-size: 16px;
+        }
+
+        button {
+            font-size: 18px;
+            border-radius: 3px;
+            min-height: 52px;
+            background: #4d7e8e;
+            color: white;
+        }
+
+        .searchBtn {
+            flex: 1;
+            background: #473d36;
+        }
+
+        .filterBtn {
+            flex: 1;
+            margin-left: 8px;
+            background: #2f1d10;
+        }
+    }
+
+    .filterArr {
+        background: #2f1d10;
+        padding: 8px 12px;
+        margin: 4px 0;
+        display: inline-block;
+
+        span {
+            color: white;
+            margin-right: 16px;
+            border: 1px solid white;
+            padding: 2px;
+        }
+    }
+
+    .filterDrawer {
+        background-color: #f1d0c4;
+        border: 1px solid #2f1d10;
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        padding: 12px;
+        box-shadow: 0 0 12px 2px #2f1d10;
+
+        .filterType {
+            padding: 0 12px;
+
+            &>div {
+                margin-bottom: 8px;
+            }
+        }
+
+        .btnContainer {
+            margin-top: 24px;
+            display: flex;
+
+            button {
+                font-size: 18px;
+                border-radius: 3px;
+                min-height: 52px;
+                background: #2f1d10;
+                color: white;
+                padding: 12px 28px;
+                flex: 1;
+            }
+
+            .cancelBtn {
+                background: #6b635d;
+                margin-left: 8px;
+            }
+        }
+    }
+}

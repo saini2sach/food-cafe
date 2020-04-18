@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import App from "./App";
-import { getProductList } from './action';
+import { getProductList, handleSearch, applyFilter } from './action';
 
 const mapStateToProps = state => ({
     ...state.appReducer
@@ -10,7 +10,9 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => {
     return bindActionCreators(
         {
-            getProductList
+            getProductList,
+            handleSearch,
+            applyFilter
         },
         dispatch
     );

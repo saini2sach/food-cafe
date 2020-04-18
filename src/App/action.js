@@ -19,3 +19,17 @@ export const getProductList = () => async dispatch => {
         console.log(err);
     }
 };
+
+export const handleSearch = (searchStr) => (dispatch) => {
+    dispatch({
+        type: Actions.HANDLE_SEARCH,
+        payload: searchStr
+    })
+}
+
+export const applyFilter = (arr) => (dispatch) => {
+    dispatch({
+        type: Actions.HANDLE_FILTER,
+        payload: arr
+    })
+}

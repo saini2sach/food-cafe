@@ -1,0 +1,38 @@
+.mainContainer {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    .productContainer {
+        margin: 12px 0;
+
+        h2 {
+            margin: 0;
+            background: #f1d0c4;
+            text-align: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #d2d2d2;
+        }
+    }
+
+    .cartContainer {
+        padding: 8px;
+        margin: 12px 0 4px;
+        background: white;
+        border: 1px solid #2f1d10;
+        display: flex;
+
+        div {
+            flex: 1;
+            align-self: center;
+        }
+
+        button {
+            font-size: 18px;
+            border-radius: 3px;
+            min-height: 52px;
+            background: #2f1d10;
+            color: white;
+            padding: 12px 28px;
+        }
+    }
+}

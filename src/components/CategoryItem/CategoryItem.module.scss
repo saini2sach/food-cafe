@@ -1,0 +1,61 @@
+.categoryItem {
+    border: 1px solid #d2d2d2;
+    min-width: 250px;
+    text-align: center;
+    flex: 1;
+    padding: 8px;
+    margin-right: 8px;
+    border-top: 0;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    h4 {
+        margin: 8px 0;
+        font-size: 18px;
+    }
+
+    p {
+        margin: 4px 0;
+        font-size: 12px;
+    }
+
+    h5 {
+        font-size: 20px;
+        margin: 12px 0 8px;
+    }
+
+
+    button {
+        font-size: 14px;
+        border-radius: 3px;
+        background: #2f1d10;
+        color: white;
+        padding: 8px 24px;
+
+        &.disabledBtn {
+            background: #757271;
+        }
+    }
+
+    .logoimg {
+        background-image: url("../../img/fast-food-menu-icons.jpg");
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        width: 160px;
+        height: 160px;
+
+        &.2 {
+            background-position: -171px -24px;
+        }
+
+        &.1 {
+            background-position: -446px -142px;
+        }
+
+        &.3 {
+            background-position: -313px -317px;
+        }
+    }
+}
