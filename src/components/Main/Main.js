@@ -37,7 +37,12 @@ export default class Main extends Component {
             cartItemArr.push(item.item);
             price += Number(item.price)
         }
-        alert("Your order has been Placed of Rupees - " + price + ". Your order details are - " + cartItemArr.join(', '))
+        alert("Your order has been Placed of Rupees - " + price + ". Your order details are - " + cartItemArr.join(', '));
+        this.setState({
+            itemAdded: false
+        })
+        this.props.initialProductList();
+        this.props.getProductList();
     }
 
     render() {

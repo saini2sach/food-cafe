@@ -33,3 +33,9 @@ export const applyFilter = (arr) => (dispatch) => {
         payload: arr
     })
 }
+
+export const initialProductList = () => (dispatch) => {
+    dispatch({
+        type: Actions.EMPTY_PRODUCT_LIST
+    })
+}

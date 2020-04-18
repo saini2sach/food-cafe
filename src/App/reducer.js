@@ -66,6 +66,12 @@ export default function (state = initialState, { type, payload }) {
                 productData: customPayload
             }
         }
+
+        case Actions.EMPTY_PRODUCT_LIST: {
+            return {
+                ...initialState
+            }
+        }
         default:
             return state
     }
