@@ -32,29 +32,35 @@ export default function (state = initialState, { type, payload }) {
 
         case Actions.HANDLE_FILTER: {
             let customPayload = JSON.parse(JSON.stringify(state.initialPayload));
-            customPayload.products.forEach(element => {
-                element.list = element.list.filter((listItem) => {
-                    let nonvegFilter = payload.includes('nonveg');
-                    let vegFilter = payload.includes('veg');
+            if (payload.length > 0) {
+                customPayload.products.forEach(element => {
+                    element.list = element.list.filter((listItem) => {
+                        let nonvegFilter = payload.includes('nonveg');
+                        let vegFilter = payload.includes('veg');
+                        let categoryFilter = payload.includes(1) || payload.includes(2) || payload.includes(3) || payload.includes(4);
 
-                    if (payload.includes(listItem.logo)) {
-                        if (nonvegFilter) {
-                            return listItem.nonveg || false;
+                        if (categoryFilter && payload.includes(listItem.logo)) {
+                            if (nonvegFilter) {
+                                return listItem.nonveg || false
+                            }
+                            else if (vegFilter) {
+                                return !listItem.nonveg
+                            }
+                            else {
+                                return true
+                            }
                         }
-                        if (vegFilter) {
-                            return listItem.nonveg || true
+                        else if (!categoryFilter) {
+                            if (nonvegFilter) {
+                                return listItem.nonveg || false
+                            }
+                            else if (vegFilter) {
+                                return !listItem.nonveg
+                            }
                         }
-                        return true;
-                    }
-                    else if (nonvegFilter) {
-                        return listItem.nonveg || false;
-                    }
-                    else if (vegFilter) {
-                        return listItem.nonveg !== true;
-                    }
-                    return false
-                })
-            });
+                    })
+                });
+            }
             return {
                 ...state,
                 productData: customPayload
