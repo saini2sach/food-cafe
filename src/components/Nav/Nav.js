@@ -104,10 +104,8 @@ export default class Nav extends Component {
                 }
                 {showFilterDrawer &&
                     <div className={s.filterDrawer}>
-                        <div>
-                            <span onClick={this.closeDrawer}>Close</span>
-                            <h3>Filter By</h3>
-                        </div>
+                        <div onClick={this.closeDrawer} className={s.closeDrawer}>Close X</div>
+                        <h3>Filter By</h3>
                         <div className={s.filterType}>
                             <h5>Category</h5>
                             <Checkbox handleChange={this.handleCheckChange} checked={filterCriteria['pizza']} name='pizza'>Pizza</Checkbox>

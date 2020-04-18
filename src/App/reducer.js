@@ -17,7 +17,7 @@ export default function (state = initialState, { type, payload }) {
             let customPayload = JSON.parse(JSON.stringify(state.initialPayload));
             if (payload.length > 0) {
                 customPayload.products.forEach(element => {
-                    element.list = element.list.filter((listItem) => (listItem.item + ' ' + element.subhead).toLowerCase().includes(payload))
+                    element.list = element.list.filter((listItem) => (listItem.item + ' ' + element.subhead).toLowerCase().includes(payload.toLowerCase()))
                 });
             }
             else {
@@ -32,16 +32,25 @@ export default function (state = initialState, { type, payload }) {
 
         case Actions.HANDLE_FILTER: {
             let customPayload = JSON.parse(JSON.stringify(state.initialPayload));
-            debugger
             customPayload.products.forEach(element => {
                 element.list = element.list.filter((listItem) => {
                     let nonvegFilter = payload.includes('nonveg');
+                    let vegFilter = payload.includes('veg');
 
                     if (payload.includes(listItem.logo)) {
                         if (nonvegFilter) {
                             return listItem.nonveg || false;
                         }
+                        if (vegFilter) {
+                            return listItem.nonveg || true
+                        }
                         return true;
+                    }
+                    else if (nonvegFilter) {
+                        return listItem.nonveg || false;
+                    }
+                    else if (vegFilter) {
+                        return listItem.nonveg !== true;
                     }
                     return false
                 })

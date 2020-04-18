@@ -15,12 +15,12 @@ export default class CategoryItem extends Component {
     }
 
     render() {
-        const { price, item, ingredient, logo } = this.props.subitem;
+        const { price, item, ingredient, logo, nonveg = false } = this.props.subitem;
         const { added } = this.state;
         return (
             <div className={s.categoryItem}>
                 <div className={s.logoimg + ' ' + (s[logo])}></div>
-                <h4>{item}</h4>
+                <h4 className={nonveg ? s.nonVeg : ''}>{item}</h4>
                 <p>( {ingredient} )</p>
                 <h5>₹{price}</h5>
                 <button onClick={this.addItem} className={added ? s.disabledBtn : ''} disabled={added}>{added ? 'Added' : 'Add'}</button>
